@@ -68,7 +68,7 @@ void bubbleSort(int arr[], int n) {
 }
 
 void num2() {
-    int arr[] = {5, 1, 4, 2, 8};
+    int arr[] = {5, 1, 4, 2, 8}; // Пример для сортировки
     int n = sizeof(arr)/sizeof(arr[0]);
     
     quickSort(arr, 0, n-1);
@@ -88,7 +88,7 @@ struct Point {
 void num3() {
     int N, M;
     char grid[100][100]; // максимальный размер поля
-    queue<Point> q; // очередь для BFS
+    queue<Point> q; // очередь для BFS (поиск в ширину)
     bool visited[100][100] = {false}; // посещенные клетки
 
     // Ввод данных
