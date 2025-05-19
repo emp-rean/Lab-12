@@ -56,12 +56,12 @@ void quickSort(int arr[], int low, int high) {
     }
 }
 
-// Сортировка обменами (пузырьковая)
+// Пузырьковая сортировка
 void bubbleSort(int arr[], int n) {
-    for (int i = 0; i < n-1; i++) { // проходов столько, сколько элементов
-        for (int j = 0; j < n-i-1; j++) { // сравниваем пары
-            if (arr[j] > arr[j+1]) { // если порядок нарушен
-                swap(arr[j], arr[j+1]); // меняем местами
+    for (int i = 0; i < n-1; i++) {
+        for (int j = 0; j < n-i-1; j++) {
+            if (arr[j] > arr[j+1]) { 
+                swap(arr[j], arr[j+1]);
             }
         }
     }
